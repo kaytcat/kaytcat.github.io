@@ -1,0 +1,104 @@
+body {
+  font-family: lato, Helvetica, Arial;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+
+.social-media a {
+  display: inline-block;
+  padding-top: 0px;
+  line-height: 20px;
+}
+
+.social-media {
+    padding-left: 40px;
+
+}
+
+.fa {
+  padding-left: 10px;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  line-height: 60px;
+  color: black;
+}
+
+
+#left-section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid #e2e2e2;
+  min-height: 650px;
+
+}
+
+nav {
+  padding-top: 230px;
+  padding-left:65px;
+
+}
+
+.nav {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding:20px;
+    padding-left: 5px;
+    width: 50px;
+}
+
+main {
+  padding-left: 200px;
+}
+
+p {
+  width: 650px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 300;
+  padding-left: 10px;
+  margin-top: 0px;
+}
+
+.intro {
+  padding-left: 20%;
+  padding-top: 100px;
+}
+
+.background-img {
+   float: right;
+   right: 0px;
+   bottom: 0px;
+   z-index: 2;
+
+
+}
+
+.contact {
+  width: 600px;
+  height: 600px;
+  background-color: grey;
+}
+
+.about {
+  width: 1000px;
+  height: 1000px;
+  background-color: red;
+}
+
+/*bootstrap changes*/
+
+.carousel-control.left {
+  background-image: none;
+}
+
+.carousel-control.right {
+  background-image: none;
+}
