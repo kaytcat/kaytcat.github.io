@@ -1,0 +1,8 @@
+{
+  "name": "Kaitlin Rathwell",
+  "version": "1.0.0",
+  "dependencies": {
+    "bootstrap": "3.0.3",
+    "jquery": "2.0.3"
+  }
+}
