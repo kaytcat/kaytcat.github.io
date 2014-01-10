@@ -2,8 +2,15 @@ body {
   font-family: lato, Helvetica, Arial;
   padding: 0px;
   margin: 0px;
+  height:100%;
 
 }
+
+html {
+  height:100%;
+}
+
+
 
 
 .social-media a {
@@ -55,7 +62,15 @@ nav {
 }
 
 main {
-  padding-left: 200px;
+  position:absolute;
+  bottom: 0;
+  left: 200px;
+  right: 0px;
+  top: 0px;
+}
+
+.item {
+  height: 800px;
 }
 
 p {
@@ -77,9 +92,25 @@ p {
    right: 0px;
    bottom: 0px;
    z-index: 2;
-
-
+   overflow: hidden;
 }
+
+.background-img img {
+  margin-right: -245px;
+}
+
+.background-img-part2 {
+  float: left;
+   right: 0px;
+   bottom: 0px;
+   z-index: 2;
+   overflow: hidden;
+}
+
+.background-img-part2 img {
+  margin-left: -948px;
+}
+
 
 .contact {
   width: 600px;
@@ -102,3 +133,34 @@ p {
 .carousel-control.right {
   background-image: none;
 }
+
+.carousel-indicators .active {
+  height: 0px;
+  background-color: none;
+}
+
+.carousel-indicators li {
+  height: 0px;
+  margin: 0px;
+  text-indent: 0px;
+  border: none;
+}
+
+.carousel-indicators {
+  position: inherit;
+/*  margin-left: 0px;*/
+}
+
+
+
+
+.navbar-wrapper {1px solid purple;}
+.carousel {border: 1px solid black;}
+.carousel-caption {border: 1px solid yellow;}
+.carousel .item {border: 1px solid blue;}
+.carousel-inner > .item > img {border: 1px solid red;}
+
+
+.carousel,.item,.active{height:100%;}
+
+.carousel-inner{height:100%;}
