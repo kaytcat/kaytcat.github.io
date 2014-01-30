@@ -74,12 +74,15 @@ main {
 }
 
 p {
+  background-color: white;
   width: 650px;
   font-size: 22px;
   line-height: 32px;
   font-weight: 300;
   padding-left: 10px;
   margin-top: 0px;
+  z-index: 100;
+  position: relative;
 }
 
 .intro {
@@ -88,19 +91,21 @@ p {
 }
 
 .background-img {
-   float: right;
-   right: 0px;
+/*   float: right;*/
+/*   right: 0px;*/
    bottom: 0px;
    z-index: 2;
    overflow: hidden;
 }
 
 .background-img img {
-  margin-right: -245px;
+  right: -245px;
+  position: absolute;
+  bottom: 0px;
 }
 
 .background-img-part2 {
-  float: left;
+   float: left;
    right: 0px;
    bottom: 0px;
    z-index: 2;
@@ -109,6 +114,13 @@ p {
 
 .background-img-part2 img {
   margin-left: -948px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.container {
+  padding: 0px;
+  width: 100%;
 }
 
 
@@ -154,13 +166,40 @@ p {
 
 
 
-.navbar-wrapper {1px solid purple;}
+/*.navbar-wrapper {1px solid purple;}
 .carousel {border: 1px solid black;}
 .carousel-caption {border: 1px solid yellow;}
 .carousel .item {border: 1px solid blue;}
 .carousel-inner > .item > img {border: 1px solid red;}
+*/
 
 
-.carousel,.item,.active{height:100%;}
 
-.carousel-inner{height:100%;}
+
+
+.slide-nav {
+  background-color: red;
+  height: 200px;
+   -webkit-transition: all 1s ease;
+   overflow: hidden;
+
+}
+.width {
+  max-width: 200px;
+  height: 50px;
+  background: blue;
+}
+.big-blue {
+  &.width {
+    max-width: 0;
+  }
+}
+
+.big-blue {
+  -webkit-transition: width 0.3s ease-in;
+            -moz-transition: width 0.3s ease-in;
+            -o-transition: width 0.3s ease-in;
+            -ms-transition: width 0.3s ease-in;
+            transition: width 0.3s ease-in;
+
+}
