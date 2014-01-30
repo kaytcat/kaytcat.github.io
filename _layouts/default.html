@@ -36,41 +36,42 @@
 
         <nav>
           <div class="nav">
-            <a data-target="#carousel-example-generic" data-slide-to="1" href="">Contact</a>
-            <a data-target="#carousel-example-generic" data-slide-to="2" href="">About</a>
-            <a class="work-link">Work</a>
+            <a data-target="#carousel-example-generic" data-slide-to="1" href="#">Contact</a>
+            <a data-target="#carousel-example-generic" data-slide-to="2" href="#">About</a>
+            <a data-target="#work" data-toggle="drawer" href="#">Work</a>
           </div>
       </nav>
       </section>
 
-      <div class="slide-nav">
-      </div>
 
 
-      <script>
-$( "slide-nav" ).click(function() {
-  $( this ).toggleClass( "big-blue", 1000, "easeOutSine" );
+
+    <div class="drawer" id="work">
+      <ul>
+        <li>Illustrations</li>
+        <li>Webdesign</li>
+        <li>Digital Art</li>
+      </ul>
+    </div>
+
+
+<script>
+$(document).ready(function() {
+  $('[data-toggle="drawer"]').click(function() {
+    var target = $(this).data('target');
+    $(target).toggleClass('open');
+
+    // var drawer = $('.drawer');
+    // if (drawer.hasClass('visible')) {
+    //     hidden.animate({"left":"-1000px"}, "slow").removeClass('visible');
+    // } else {
+    //     hidden.animate({"left":"193px"}, "slow").addClass('visible');
+    // }
+  });
 });
 </script>
 
-
-
       <main>
-
-
-
-        <a data-toggle="collapse" href="#collapseOne">
-          Collapsible Group Item #1
-        </a>
-
-        <div style="position:absolute;width:200px;height:100%">
-          <div id="collapseOne" class="collapse width" >
-            <div style="width:200px;height:100%;background:pink;overflow:hidden">
-              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-            </div>
-          </div>
-        </div>
-
         {{ content }}
       </main>
 
