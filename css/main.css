@@ -22,12 +22,12 @@
 
     h1, h2  {
       font-weight: 100;
-      font-size: 38px;
+      font-size: 45px;
       margin: 0px;
     }
 
     h2 {
-      font-size: 18px;
+      font-size: 22px;
     }
 
     .one {
@@ -61,7 +61,7 @@
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1360px;
       min-width: 320px;
       margin-left:auto;
       margin-right: auto;
@@ -112,7 +112,7 @@
     }
 
     .content {
-      max-width: 400px;
+      max-width: 430px;
 
       margin: 0 auto;
       text-align: left;
