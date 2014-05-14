@@ -6,7 +6,7 @@
     }
 
     html {
-      background: url(../images/images/background.jpg) no-repeat center center fixed;
+      background: url(/images/images/background.jpg) no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -107,6 +107,10 @@
       width: 35px;
     }
 
+    .hamburger:hover {
+      cursor: pointer;
+    }
+
     .content {
       max-width: 400px;
 
@@ -185,6 +189,11 @@
 
       .menu-links {
         padding-top: 30%;
+      }
+
+      .menu-links li:hover,
+      .menu-links li:visited {
+        text-decoration: underline;
       }
 
 
