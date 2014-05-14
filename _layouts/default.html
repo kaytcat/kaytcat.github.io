@@ -6,77 +6,65 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
 
-        <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
         <!-- Custom CSS -->
         <link rel="stylesheet" href="/css/main.css">
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        <link rel="stylesheet" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
 
+         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     </head>
     <body>
 
-      <section id="left-section">
-        <header>
-          <div>
-            <a href=""><img data-target="#carousel-example-generic" data-slide-to="0" class="active"src="images/logo_01.jpg"></a>
+      <div class="one">
+        <div class="slider-content">
+          <ul class="menu-links">
+            <a href=""><li>Artwork</li></a>
+            <a href=""><li>Webdesign</li></a>
+            <a href=""><li>Email Templates</li></a>
+            <a href=""><li>Other</li></a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="container">
+          <section class="menu" role="navigation">
+            <div class="hamburger" id="activate" data-toggle="slider" data-target="#slider-js">
+              <img src="images/images/ham.png" alt="menu">
+            </div>
+
+            <ul class="navbar">
+              <a href="">
+                <li>MY RESUME</li>
+              </a>
+               <a href="">
+                <li>CONTACT ME</li>
+              </a>
+            </ul>
+          </section>
+
+          <div class="content">
+            <h1>KAITLIN RATHWELL</h1>
+            <h2>Digital Artist | Webdesigner | Webdeveloper</h2>
+
+            <p>
+              I am an passionate designer/artist looking to bring <strong>creativity</strong> and  <strong>uniqueness</strong> to the world of web.
+            </p>
+            <p class="status">
+              *I am currently available for freelance work
+            </p>
+
+            <ul class="media cf">
+              <a href=""><li><i class="fa fa-github"></i></li></a>
+              <a href=""><li><i class="fa fa-twitter"></i></li></a>
+              <a href=""><li><i class="fa fa-google-plus"></i></li></a>
+            </ul>
           </div>
-          <div class="social-media">
-            <a href=""><i class="fa fa-twitter-square"></i></a>
-            <a href=""><i class="fa fa-google-plus"></i></a>
-            <a href=""><i class="fa fa-rss"></i></a>
-            <a href=""><i class="fa fa-facebook-square"></i></a>
-          </div>
-        </header>
-
-        <nav>
-          <div class="nav">
-            <a data-target="#carousel-example-generic" data-slide-to="1" href="#">Contact</a>
-            <a data-target="#carousel-example-generic" data-slide-to="2" href="#">About</a>
-            <a data-target="#work" data-toggle="drawer" href="#">Work</a>
-          </div>
-      </nav>
-      </section>
+        </div>
+      </div>
 
 
 
-
-    <div class="drawer" id="work">
-      <ul>
-        <li>Illustrations</li>
-        <li>Webdesign</li>
-        <li>Digital Art</li>
-      </ul>
-    </div>
-
-
-<script>
-$(document).ready(function() {
-  $('[data-toggle="drawer"]').click(function() {
-    var target = $(this).data('target');
-    $(target).toggleClass('open');
-
-    // var drawer = $('.drawer');
-    // if (drawer.hasClass('visible')) {
-    //     hidden.animate({"left":"-1000px"}, "slow").removeClass('visible');
-    // } else {
-    //     hidden.animate({"left":"193px"}, "slow").addClass('visible');
-    // }
-  });
-});
-</script>
-
-      <main>
-        {{ content }}
-      </main>
-
-      <script src="components/jquery/jquery.min.js"></script>
-      <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
+      <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+      <script src="/js/main.js"></script>
     </body>
 </html>
